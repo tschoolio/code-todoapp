@@ -40,7 +40,7 @@ export class TodoService {
   }
 
   public async update(todo: Todo){
-    return await this.storage.set(todo.key, todo);
+    return await this.storage.set(todo.title, todo);
   }
 
   public async delete(key: string){
